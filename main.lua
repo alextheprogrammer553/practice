@@ -7,7 +7,10 @@ VIRTUAL_WIDTH = 512
 VIRTUAL_HEIGHT = 288
 
 local background = love.graphics.newImage('background.png')
+local backgroundScroll = 0
+
 local ground = love.graphics.newImage('ground.png')
+local groundScroll = 0
 
 function love.load()
     love.graphics.setDefaultFilter('nearest', 'nearest')
@@ -40,3 +43,4 @@ function love.draw()
     
     push:finish()
 end
+
